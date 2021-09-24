@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="VerificadorGR.Views.PrecioDatosPage"
+             BackgroundColor="Yellow">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image
+                Source="sirena"
+                VerticalOptions="Start"
+                HorizontalOptions="Start"
+                WidthRequest="300"
+                ></Image>
+            <Label 
+                Text="Descripcion:"                
+                TextColor="Black"
+                FontAttributes="Bold"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                FontSize="50"
+                />
+            <Label 
+                x:Name="lblDescripcion"
+                Text="Producto no encontrado."
+                
+                TextColor="Red"
+                FontAttributes="Bold"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                FontSize="50"
+                Margin="0,0,0,40"/>
+            <Label
+                x:Name="lblPrecioD"
+                Text="Precio:"
+                TextColor="Black"
+                FontAttributes="Bold"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                FontSize="50"/>
+            <Label 
+                x:Name="lblPrecio"
+                Text="RD$ 798.00"
+                
+                TextColor="Red"
+                FontAttributes="Bold"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                FontSize="50"
+                Margin="0,0,0,40"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

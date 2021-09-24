@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="VerificadorGR.Views.ConfigPage"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="100"
+            BackgroundColor="White"
+            VerticalOptions="Center"
+            >
+            <Label                    
+                Text="Servidor"
+                FontSize="60"
+                HorizontalOptions="Center"
+                FontAttributes="Bold"
+                Margin="0,0,0,40"
+                TextColor="Black"></Label>
+
+            <Grid
+                Margin="100,0,100,40">
+                <Grid.RowDefinitions>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition
+                            Width="*"></ColumnDefinition>
+                    <ColumnDefinition
+                             Width="2*"></ColumnDefinition>
+
+                </Grid.ColumnDefinitions>
+
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Text="Direccion IP: " 
+                    FontSize="30" 
+                    VerticalTextAlignment="Center"
+                    TextColor="Black"/>
+                <Entry 
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Text="255.255.255.255" 
+                    TextColor="Black"     
+                    FontSize="30"
+                    HorizontalTextAlignment="Center"
+                    MaxLength="15"                       
+                    WidthRequest="190"
+                    x:Name="ServerIP"/>
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Text="Puerto: " 
+                    FontSize="30"
+                    VerticalTextAlignment="Center"
+                    TextColor="Black"/>
+                <Entry 
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Text="255.255.255.255" 
+                    TextColor="Black"     
+                    FontSize="30"
+                    HorizontalTextAlignment="Center"
+                    MaxLength="15"                       
+                    WidthRequest="190"
+                    x:Name="ServerPORT"/>
+            </Grid>
+
+            <Button 
+                Margin="390,0,390,0"
+                CornerRadius="30"
+                x:Name="btnGuardar"
+                Text="Guardar"  
+                FontSize="30"
+                HeightRequest="80"
+                BackgroundColor="#F44336"                            
+                TextColor="White"    
+                FontAttributes="Bold"
+                Clicked="btnGuardar_Clicked"
+                    />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

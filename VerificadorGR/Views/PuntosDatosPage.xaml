@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="VerificadorGR.Views.PuntosDatosPage"
+             BackgroundColor="Yellow">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Image
+                Source="sirena"
+                VerticalOptions="Start"
+                HorizontalOptions="Start"
+                WidthRequest="300"
+                ></Image>
+            <Grid
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Padding="30">
+                <Grid.RowDefinitions>
+                    <RowDefinition
+                        Height="*">
+
+                    </RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition
+                        Width="*"></ColumnDefinition>
+                    <ColumnDefinition
+                        Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackLayout
+                   Grid.Column="0"
+                   Grid.Row="0">
+                     <Label 
+                        Text="Cliente:"                
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        FontSize="50"
+                        />
+                    <Label 
+                        x:Name="lblCliente"
+                        Text="Fernando Hernandez"
+                
+                        TextColor="Red"
+                        FontAttributes="Bold"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        FontSize="50"
+                        Margin="0,0,0,60"/>
+                    <Label
+                        x:Name="lblPuntosD"
+                        Text="Puntos:"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        FontSize="50"/>
+                    <Label 
+                        x:Name="lblPuntos"
+                        Text="Tiene 3,066 puntos."
+                        HorizontalTextAlignment="Center"
+                
+                        TextColor="red"
+                        FontAttributes="Bold"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        FontSize="50"
+                        Margin="0,0,0,0"/>
+                        </StackLayout>
+                <Image
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    Source="siremas"
+                    WidthRequest="400"
+                ></Image>
+
+            </Grid>
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

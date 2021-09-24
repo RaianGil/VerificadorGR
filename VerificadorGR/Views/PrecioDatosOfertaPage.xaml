@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="VerificadorGR.Views.PrecioDatosOfertaPage"
+             BackgroundColor="Yellow">
+    <ContentPage.Content>
+        <StackLayout>
+            
+        <Grid
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Padding="40">
+            <Grid.RowDefinitions>
+                    <RowDefinition
+                        Height="*">
+                        
+                    </RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                    <ColumnDefinition
+                        Width="*"></ColumnDefinition>
+                    <ColumnDefinition
+                        Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+        <StackLayout
+            Grid.Column="0"
+            Grid.Row="0">
+                    <Image
+                Source="sirena"
+                VerticalOptions="Start"
+                HorizontalOptions="Start"
+                WidthRequest="300"
+                ></Image>
+                    <Label 
+                Text="Descripcion:"                
+                TextColor="Black"
+                FontAttributes="Bold"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                FontSize="50"
+                />
+            <Label 
+                x:Name="lblDescripcion"
+                Text="Producto no encontrado."
+                
+                TextColor="Red"
+                FontAttributes="Bold"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                FontSize="50"
+                Margin="0,0,0,40"/>
+            <Label
+                x:Name="lblPrecioD"
+                Text="Precio:"
+                TextColor="Black"
+                FontAttributes="Bold"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                FontSize="50"/>
+            <Label 
+                x:Name="lblPrecio"
+                Text="RD$ 798.00"
+                
+                TextColor="Red"
+                FontAttributes="Bold"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                FontSize="50"
+                Margin="0,0,0,40"/>
+
+        </StackLayout>
+                <Frame
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    
+                    BorderColor="Black"
+                    BackgroundColor="Yellow"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    Padding="20"
+                    CornerRadius="26">
+                    <StackLayout>
+                        <Label
+                            VerticalOptions="Start"
+                            Text="Ofertas Sugeridas"
+                            HorizontalOptions="Center"
+                            FontSize="50"
+                            TextColor="Black"
+                            FontAttributes="Bold"></Label>
+                        <Label
+                            Margin="0,40,0,40"
+                            VerticalOptions="Center"
+                            Text="POR LA COMPRA DE $750.00 EN PRODUCTOS NESTLE PARTICIPAS EN LA RIFA DE PEQ ELECTROS Y BONOS DE COMPRA .EXCLUSIVO
+		CLIENTE SIREMAS.VALIDO AL 15.12.19
+                            &#x0a;&#x0a;POR LA COMPRA DE $750.00 EN PRODUCTOS NESTLE PARTICIPAS EN LA RIFA DE PEQ ELECTROS Y BONOS DE COMPRA .EXCLUSIVO
+		CLIENTE SIREMAS.VALIDO AL 15.12.19&#x0a;&#x0a;POR LA COMPRA DE $750.00 EN PRODUCTOS NESTLE PARTICIPAS EN LA RIFA DE PEQ ELECTROS Y BONOS DE COMPRA .EXCLUSIVO
+		CLIENTE SIREMAS.VALIDO AL 15.12.19
+                            
+                            "
+                            HorizontalTextAlignment="Center"
+                            LineBreakMode="WordWrap"
+                            FontSize="30"
+                            TextColor="Black"
+                            x:Name="lblOferta"
+                            FontAttributes="Bold"></Label>
+                        <Label
+                            
+                            VerticalOptions="Start"
+                            Text="*** Aplica solo una oferta monetaria ***"
+                            HorizontalOptions="Center"
+                            VerticalTextAlignment="Center"
+                            FontSize="30"
+                            TextColor="Black"
+                            FontAttributes="Bold"></Label>
+
+                    </StackLayout>
+                </Frame>
+        </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
