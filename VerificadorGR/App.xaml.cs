@@ -12,7 +12,7 @@ namespace VerificadorGR
         {
             InitializeComponent();
 
-            MainPage = new InicioPage();
+            MainPage = new InicioPageMod();
         }
 
         protected override void OnStart()

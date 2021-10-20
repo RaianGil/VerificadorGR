@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="VerificadorGR.Views.InicioPageMod"
+             BackgroundColor="Yellow"
+             NavigationPage.HasNavigationBar="False">
+    
+    <StackLayout>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Image
+                Source="defaultImg"
+                HeightRequest="300"
+                VerticalOptions="CenterAndExpand"
+                />
+        </StackLayout>
+        <StackLayout 
+            IsVisible="False">
+            <ImageButton
+                BackgroundColor="Yellow"
+                x:Name="imgSirena"
+                Source="sirena"
+                VerticalOptions="Start"
+                HorizontalOptions="Start"
+                WidthRequest="200"
+                Clicked="imgSirena_Clicked"
+                    ></ImageButton>
+            <Label
+                    Text="CONSULTE SUS PUNTOS O PRECIO AQUI DEBAJO"
+                    WidthRequest="800"
+                    
+                    TextColor="Red"
+                    FontSize="60"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    VerticalOptions="Center"
+                    Margin="0,30,0,50"></Label>
+            <Image
+                    Source="cbarra"
+                    WidthRequest="200"
+                    HeightRequest="200"
+                    />
+        </StackLayout>
+        <Entry 
+                x:Name="entCodigo"
+     
+                HorizontalOptions="CenterAndExpand"
+                Margin="0,0,0,100"                              
+                Completed="Entry_Completed"/>
+
+    </StackLayout>
+</ContentPage>
